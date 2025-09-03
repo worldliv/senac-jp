@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <!-- tag table: "envelopa" toda a tabela.
+    tag tr: define uma linha da tabela (Table Row).
+    tag td: define uma célula de dados dentro de uma linha (Table Data).
+    tag th: define uma célula de cabeçalho (Table Header). O texto fica
+    em negrito e centralizado por padrão.
+    -->
+
+    <!-- *EXEMPLO TABELA 2X2 SIMPLES*
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Lívia</td>
+            <td>17</td>
+        </tr>
+    -->
+
+    <!-- ****AGRUPAR AS LINHAS EM SEÇÕES DE CABEÇALHO, CORPO E RODAPÉ 
+     PARA DAR MAIS SIGNIFICADO À ESTRUTURA DA TABELA**** -->
+     <!-- thead: agrupa o conteúdo do cabeçalho de tabela (geralmente as linhas com th).
+     tbody:agrupa o conteúdo principal, o corpo da tabela (as linhas com os dados).
+     tfoot: agrupa o conteúdo do rodapé da tabela (ex. uma linha de totais).
+     -->
+
+     <!-- *EXEMPLO DE TABELA SEMÂNTICA*
+     <table border="1">
+        <thead>
+            <tr> <th>Produto</th> <th>Preço</th> </tr>
+        </thead>
+        <tbody>
+            <tr> <td>Arroz</td> <td>R$ 20,00</td> </tr>
+         </tbody>
+         <tfoot>
+            <tr> <td>Total</td> <td>R$ 20,00</td> </tr>
+         </tfoot>
+         </table>
+     -->
+
+     <!-- ****ATRIBUTOS**** 
+     **colspan: faz uma célula se expandir para a direita, ocupando múltiplas colunas.
+     **rowspan: faz uma célula se expandir para baixo, ocupando múltiplas linhas. 
+     -->
+
+     <!-- *EXEMPLO DE COLSPAN*
+      <table border="1">
+        <tr>
+            <th colspan="2">Despesas Mensais</th>
+        </tr>
+        <tr>
+            <td>Aluguel</td> <td>R$ 1500</td>
+        </tr>
+       </table>
+     -->
+
+     <!-- exercício 01 -->
+      <table border="1">
+        <tr>
+            <td>Célula 1</td>
+        </tr>
+      </table>
+
+      <!-- exercício 02 -->
+       <table border="1">
+        <tr>
+            <td>Linha1, Célula 1</td>
+            <td>Linha1, Célula 2</td>
+        </tr>
+        <tr>
+            <td>Linha2, Célula 1</td>
+            <td>Linha 2, Célula 2</td>
+        </tr>
+       </table>
+
+       <!-- exercício 03 -->
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+        </table>
+
+        <!-- exercício 04 -->
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Morando</td>
+                <td>R$ 08,00</td>
+            </tr>
+        </table>
+
+        <!-- exercício 05 -->
+        <table border="1">
+            <tr>
+                <td>A</td> <td>B</td>
+            </tr>
+            <tr>
+                <td>C</td> <td>D</td>
+            </tr>
+        </table>>
+
+        <!-- exercício 06 -->
+         <table width="100%" border="1">
+            <tr>
+               <td>Conteúdo</td>
+            </tr>
+         </table>
+
+         <!-- exercício 07 -->
+         <table border="1" align="center">
+            <tr>
+                <td>Estou no centro</td>
+            </tr>
+         </table>
+
+         <!-- exercício 08 -->
+          <table border="1" cellpadding="15">
+            <tr>
+                <td>Muito espaço aqui dentro.</td>
+            </tr>
+          </table>
+
+          <!-- exercício 09 -->
+           <table border="1" cellspacing="10">
+            <tr>
+                <td>A</td> <td>B</td>
+            </tr>
+           </table>
+
+           <!-- exercíco 10 -->
+            <table border="1">
+                <tr>
+                    <td bgcolor="yellow">Esta célula é amarela.</td>
+                    <td>Esta célula não está amarela.</td>
+                </tr>
+            </table>
+
+            <!-- exercício 11 -->
+             <table border="1">
+                <tr>
+                    <th colspan="2">Relatório de vendas</th>
+                </tr>
+                <tr>
+                    <td>Mês</td> <td>Valor</td>
+                </tr>
+             </table>
+
+             <!-- exercício 12 -->
+              <table border="1">
+                <tr>
+                    <td rowspan="2">Telefones</td>
+                    <td>(48) 9999-8888</td>
+                </tr>
+                <tr>
+                    <td>(48) 3333-4444</td>
+                </tr>
+              </table>
+
+              <!-- exercício 13 -->
+               <table border="1">
+                <thead>
+                    <tr> <th>produto</th> <th>Cor</th> </tr>
+                </thead>
+                <tbody>
+                    <tr> <td>Camiseta</td> <td>Azul</td> </tr>
+                </tbody>
+               </table>
+
+               <!-- exercício 14 -->
+                <table>
+                    <tr> <td>1</td> <td>2</td> <td>3</td> </tr>
+                    <tr> <td>4</td> <td>5</td> <td>6</td> </tr>
+                    <tr> <td>7</td> <td>8</td> <td>9</td> </tr>
+                </table>
+
+</body>
+</html>
